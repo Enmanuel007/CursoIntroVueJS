@@ -10,7 +10,7 @@
     <div id = "app">
         <H1>{{titulo}}</H1>
 
-        <input type="text" v-model="nuevafruta">
+        <input type="text" v-model="nuevafruta" v-on:keyup.enter= "agregarFruta">
         <button v-on:click="agregarFruta">Agregar</button>
 
         <ul>
