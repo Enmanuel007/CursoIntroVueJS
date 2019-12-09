@@ -5,27 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hola mundo con JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <div id = "app">
-        <H1>{{titulo}}</H1>
+    <div id = "app" class ="container mt-5">
 
-        <input type="text" v-model="nuevafruta" v-on:keyup.enter= "agregarFruta">
-        <button v-on:click="agregarFruta">Agregar</button>
-
-        <ul>
-            <li v-for="interpolarFrutas of frutas">
-                <input type="number" v-model.number="interpolarFrutas.cantidad">
-                {{interpolarFrutas.nombre}}
-                <button v-on:click="interpolarFrutas.cantidad++">+</button>
-                <button v-on:click="interpolarFrutas.cantidad--">-</button>
-                <span v-if="interpolarFrutas.cantidad === 0"> - Sin stock</span>
-            </li>
-        </ul>
-
-        <H4>TOTAL: {{sumarfrutas}} </H4>
-
-        
+        <div class = "bg-danger" :class ="'p-3'">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur ea soluta ab laboriosam a, iure facilis doloremque optio explicabo obcaecati rem eum repellendus nulla ducimus recusandae non impedit earum.</p>
+        </div>
+              
     </div>
     
     
