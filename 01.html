@@ -15,10 +15,15 @@
 
         <ul>
             <li v-for="interpolarFrutas of frutas">
-                {{interpolarFrutas.cantidad}} - {{interpolarFrutas.nombre}}
+                <input type="number" v-model.number="interpolarFrutas.cantidad">
+                {{interpolarFrutas.nombre}}
+                <button v-on:click="interpolarFrutas.cantidad++">+</button>
+                <button v-on:click="interpolarFrutas.cantidad--">-</button>
                 <span v-if="interpolarFrutas.cantidad === 0"> - Sin stock</span>
             </li>
         </ul>
+
+        <H4>TOTAL: </H4>
 
         
     </div>
