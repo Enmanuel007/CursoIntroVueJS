@@ -6,7 +6,12 @@ const app = new  Vue({
             {nombre: 'manzana', cantidad: 10},
             {nombre: 'pera', cantidad: 0},
             {nombre: 'uva', cantidad: 3}
-        ]
-       
+        ],
+        nuevafruta: ''
+    },
+    methods:{
+        agregarFruta (){
+            console.log('diste click')
+        }
     }
 })

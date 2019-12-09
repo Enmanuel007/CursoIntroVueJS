@@ -10,6 +10,9 @@
     <div id = "app">
         <H1>{{titulo}}</H1>
 
+        <input type="text" v-model="nuevafruta">
+        <button v-on:click="agregarFruta">Agregar</button>
+
         <ul>
             <li v-for="interpolarFrutas of frutas">
                 {{interpolarFrutas.cantidad}} - {{interpolarFrutas.nombre}}
