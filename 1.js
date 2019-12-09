@@ -11,7 +11,10 @@ const app = new  Vue({
     },
     methods:{
         agregarFruta (){
-            console.log('diste click')
+            this.frutas.push({
+                nombre: this.nuevafruta,
+                cantidad: 0
+            })
         }
     }
 })
