@@ -11,12 +11,12 @@
         <H1>{{titulo}}</H1>
 
         <ul>
-            <li v-for="interpolarFrutas of frutas">{{interpolarFrutas}}</li>
+            <li v-for="interpolarFrutas of frutas">
+                {{interpolarFrutas.cantidad}} - {{interpolarFrutas.nombre}}
+            </li>
         </ul>
 
-        <ul>
-            <li v-for="interpolarRopa of ropa">{{interpolarRopa.cantidad}}</li>
-        </ul>
+        
     </div>
     
     
